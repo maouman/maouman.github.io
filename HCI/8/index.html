@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料</title>
+    <link rel="stylesheet" href="https://maouman.github.io/HCI/style.css">
+</head>
+<body class="stackedit">
+<div class="stackedit__html">
+    <h1 id="第8章-インターフェースの評価">第8章 インターフェースの評価</h1>
+    <h2 id="この章でやること">この章でやること</h2>
+    <ul>
+        <li>開発者のインターフェース評価方法
+            <br>
+            <ul>
+                <li>キーストロークモデル</li>
+            </ul>
+        </li>
+        <li>ユーザのインターフェース評価方法
+            <br>
+            <ul>
+                <li>フィッツの法則</li>
+            </ul>
+        </li>
+    </ul>
+    <h2 id="開発者のインターフェース評価方法">開発者のインターフェース評価方法</h2>
+    <h3 id="開発者の評価項目">開発者の評価項目</h3>
+    <ul>
+        <li>制約</li>
+        <li>マッピング</li>
+        <li>アフォーダンス</li>
+        <li>ユーザモデルとデザインモデル</li>
+        <li>実行の淵</li>
+        <li>認知の淵</li>
+        <li>
+            <p>ユーザインターフェースガイドラインでもチェック可能</p>
+            <ul>
+                <li>直接操作</li>
+                <li>メタファー</li>
+                <li>やりなおし機能</li>
+                <li>モード</li>
+                <li>統一性</li>
+                <li>ターゲットユーザ</li>
+                <li>メッセージ</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="キーストロークモデル">キーストロークモデル</h3>
+    <ul>
+        <li>ユーザが操作に必要な時間を予測する、ユーザインターフェースの評価方法</li>
+        <li>設計段階からインターフェースが評価可能</li>
+        <li>評価対象の操作を基本的な操作に分解して、それぞれの所要時間の積算で評価</li>
+        <li>基本操作にはアルファベットが割り当てられている</li>
+    </ul>
+    <table>
+        <thead>
+        <tr>
+            <th align="center">アルファベット</th>
+            <th align="left">意味</th>
+            <th align="left">所要時間</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td align="center">K</td>
+            <td align="left">キーボードの1つのキーが押されて話される</td>
+            <td align="left">約0.28秒</td>
+        </tr>
+        <tr>
+            <td align="center">T(n)</td>
+            <td align="left">キーボードからn文字入力する</td>
+            <td align="left"> n × K秒</td>
+        </tr>
+        <tr>
+            <td align="center">P</td>
+            <td align="left">画面上の目標物をマウスで指示する</td>
+            <td align="left">1.1秒</td>
+        </tr>
+        <tr>
+            <td align="center">B</td>
+            <td align="left">マウスのボタンを押す、もしくは離す</td>
+            <td align="left">0.1秒</td>
+        </tr>
+        <tr>
+            <td align="center">H</td>
+            <td align="left">キーボードからマウスに手を移動する、もしくはその逆</td>
+            <td align="left">0.4秒</td>
+        </tr>
+        <tr>
+            <td align="center">M</td>
+            <td align="left">機械的な判断もしくは知覚</td>
+            <td align="left">1.2秒</td>
+        </tr>
+        <tr>
+            <td align="center">W(t)</td>
+            <td align="left">システムの応答時間</td>
+            <td align="left">t秒</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2 id="ユーザのインターフェース評価方法">ユーザのインターフェース評価方法</h2>
+    <h3 id="評価実験">評価実験</h3>
+    <ul>
+        <li>ユーザのインターフェースの評価は、開発者が使うこともある ⇒ 評価実験</li>
+        <li>評価実験では、人に試作品を使ってもらい、製品の性能を評価する</li>
+        <li>評価実験の結果の信頼性を高めるには、
+            <ul>
+                <li>実験で評価したいものを明確にして実験を実施する ⇒ 評価したいもの以外はできるだけ同じようにする</li>
+                <li>実験の被験者を製品の想定しているユーザ層で構成する</li>
+                <li>より多くの被験者で実験を行う</li>
+            </ul>
+        </li>
+        <li>評価実験の対象になっている製品について知識がある人では、正確な評価が行えない</li>
+        <li>同じ熟練度の被験者を集められないとき、従来の方法と新しい方法の2つの使ってもらい、比較をする実験方法 ⇒ 対照実験
+            <ul>
+                <li>課題への習熟を考慮して実験の順番や回数を変えることもある</li>
+            </ul>
+        </li>
+        <li>練習量、練習時間と操作の効率でグラフを作ると、操作の正確さ、速度の変化がわかる ⇒ 学習曲線(p152, 図8.3)
+            <ol>
+                <li>練習初期は操作効率があまり向上しない</li>
+                <li>基本的な操作を学習することで操作効率が急激に上がする</li>
+                <li>学習の効果が停滞して操作効率が安定する</li>
+            </ol>
+        </li>
+        <li>対照実験では、従来と新規の方法の学習曲線を比較することで性能を比較できる</li>
+        <li>実験後にアンケートをとり被験者の意見を聞く場合もある
+            <ul>
+                <li>ユーザインターフェースの標準的な設問 ⇒ QUIS</li>
+                <li>「好き、嫌い」など反対の意味を持つ形容詞を何段階かに分けてその度合いで答えてもらう ⇒ SD法</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="フィッツの法則">フィッツの法則</h3>
+    <ul>
+        <li>T=a+b*log2(1+D/W)
+            <ul>
+                <li>マウスの操作時間を出すための式</li>
+                <li>Dは現在のポインタの位置から目標位置までの距離</li>
+                <li>Wは対象のオブジェクトの大きさ</li>
+                <li>aはDが0,Wが∞の場合でもかかる時間(実験をもとに算出する定数)</li>
+                <li>bは目標の距離、大きさが所要時間に与える影響(実験をもとに算出する定数)</li>
+            </ul>
+        </li>
+        <li>この式から、遠くにあり、小さいオブジェクトは捉えづらい</li>
+        <li>目標オブジェクトが遠くにあっても、大きければ所要時間は短くなる</li>
+        <li>T=a+b*log2(1+D/W)
+            <ol>
+                <li>人は、目標物の手前に目標地点を定めて、そこまでポインタを高速に動かす ⇒ ポインタの移動速度は目標物に近づくにつれ低下するが、この動作を繰り返す</li>
+                <li>目標地点を目標物までの距離の1/2に定めているとすると、手順1の動作をN回行ったときには目標物までの距離は(1/2)^N * D</li>
+                <li>目標の大きさWから、目標物中心までの距離がWの半分になれば目標物に到達できる ⇒ (1/2)^N * D = W / 2</li>
+                <li>手順3の式を整理すると、N=1+log2(D/W)</li>
+                <li>目標物の手前の目標地点までポインタを動かす1回の動作にt秒必要とすると、T=Nt=t+tlog2(D/W)=a+blog2(D/W)</li>
+            </ol>
+        </li>
+    </ul>
+    <!--
+    https://www.slideshare.net/ohsugahiroshi/slideshare-55728524
+    https://uxdaystokyo.com/articles/glossary/fittss-law/
+    https://www.sociomedia.co.jp/349
+    https://www.slideshare.net/kotaro_hirayama/ss-55642343
+    -->
+</div>
+</body>
+</html>
